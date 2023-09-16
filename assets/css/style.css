@@ -189,11 +189,18 @@
 }
 
 
-
+.btn-mint-now:hover{
+    background-color: #FFF03F;
+}
+.btn-mint-now:active{
+    transform: scale(0.9);
+}
 .mw-950 {
     max-width: 950px;
 }
-
+.padding-unset{
+    padding: unset !important;
+}
 .flex-grow-1 {
     flex-grow: 1;
 }
