@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,500;0,600;0,700;1,400&display=swap');
+
+
+
+/*roots*/
+:root {
+    /*font-size*/
+    --fs-88: 88px;
+    --fs-80: 80px;
+    --fs-36: 36px;
+    --fs-14: 14px;
+    --fs-16: 16px;
+    --fs-24: 24;
+    /*font-weight*/
+    --fw-3: 300;
+    --fw-6: 600;
+    --fw-5: 500;
+    --fw-4: 400;
+    /*font-family*/
+    --ff-perpetua: 'Perpetua titling MT';
+    --ff-noto: 'noto serif';
+
+
+}
+
+.bg-img {
+    background-image: url(../images/bg-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-perouta {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.ff-Perpetua {
+    font-family: var(--ff-perpetua);
+}
+
+.ff-noto {
+    font-family: var(--ff-noto);
+}
+
+.fs-80 {
+    font-size: var(--fs-80);
+}
+
+.fs-36 {
+    font-size: var(--fs-36);
+}
+
+.fw-300 {
+    font-weight: var(--fw-3);
+}
+
+.fs-16 {
+    font-size: var(--fs-16);
+}
+
+.fw-400 {
+    font-weight: var(--fw-4);
+}
+
+.py-90 {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.fw-600 {
+    font-weight: var(--fw-6);
+}
+
+.fs-88 {
+    font-size: var(--fs-88);
+}
+
+.fs-24 {
+    font-size: var(--fs-24);
+}
+
+.py-88 {
+    padding-top: 88px;
+    padding-bottom: 88px;
+}
+
+.border-container {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.b-2 {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.mw-327 {
+    max-width: 327px;
+}
+.accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-colo) !important;
+}
+.accordion-button::after {
+    flex-shrink: 0;
+    width: var(--bs-accordion-btn-icon-width);
+    height: var(--bs-accordion-btn-icon-width);
+    margin-left: auto;
+    content: "";
+    background-image: url(../images/+.svg) !important;
+    background-repeat: no-repeat;
+    background-size: var(--bs-accordion-btn-icon-width);
+    transition: var(--bs-accordion-btn-icon-transition);
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../images/-.svg) !important;
+    height: 5px;
+    transform: var(--bs-accordion-btn-icon-transform);
+}
+.box1 {
+    width: 400px;
+    padding-top: 48px;
+    padding-left: 16px;
+    border-right: 2px solid black;
+    padding-bottom: 30px;
+}
+
+.mint-box {
+    min-width: 238px;
+}
+
+.btn-sub {
+    border: 2px solid black;
+    padding: 12px 24px;
+    background: transparent;
+}
+
+.no-100 {
+    border: 2px solid black;
+    padding: 12px 24px;
+}
+
+.btn-add {
+    border: 2px solid black;
+    padding: 12px 24px;
+    background: transparent;
+}
+
+.br-2 {
+    border-right: 2px solid black;
+}
+
+.bl-2 {
+    border-left: 2px solid black;
+}
+
+.mw-438 {
+    max-width: 450px;
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
+
+.btn-prev {
+    border: none;
+    background: transparent;
+}
+
+.btn-next {
+    border: none;
+    background: transparent;
+}
+
+.btn-mint-now {
+    border: 2px solid black;
+    background-color: #FFD600;
+    color: black;
+}
+
+.color-green {
+    color: #00A106;
+}
+
+.color-red {
+    color: #F00;
+}
+
+.bb-2 {
+    border-bottom: 2px solid black;
+}
+
+
+
+.mw-950 {
+    max-width: 950px;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0rem !important;
+}
+
+.mw-1320 {
+    max-width: 1320px;
+}
+
+.main-heading-1 {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.pt-26 {
+    padding-top: 26px;
+}
+
+.pt-43 {
+    padding-top: 43px;
+}
+
+
+.accordian-heading {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-left: 31px;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.accordian {
+    background-color: #FFF03F;
+    border: 1px solid #FFF03F;
+    max-width: 922px;
+    padding: 17px 11px 18px 19px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+}
+
+.accordian-para {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding-bottom: 20px;
+    font-weight: 400;
+    max-width: 866px;
+    opacity: 0.7;
+    display: none;
+}
+
+.bg-transparent {
+    background-color: transparent;
+    background: transparent;
+}
+
+.accordian.active .accordian-para {
+    display: block;
+    padding-left: 31px;
+    padding-top: 20px;
+    padding-bottom: 19px;
+}
+
+.accordion {
+    --bs-accordion-bg: transparent !important;
+}
+
+.fs-20 .accordion-item {
+    border-bottom: 2px solid black !important;
+    padding: 32px 30px;
+}
+
+.mt--7 {
+    margin-top: -7px;
+}
+
+.accordion-button {
+    position: relative;
+    box-shadow: none !important;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+    font-size: 1rem;
+    color: black;
+    text-align: left;
+    background-color: transparent !important;
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: var(--bs-accordion-transition);
+}
+
+.accordion-item {
+    color: var(--bs-accordion-color);
+    background-color: var(--bs-accordion-bg);
+    border-bottom: 2px solid black !important;
+}
+
+.accordion-button:not(.collapsed) {
+    /* color: var(--bs-accordion-active-color); */
+    background-color: var(--bs-accordion-active-bg);
+    box-shadow: none !important;
+}
+
+.arrow {
+    rotate: 180deg;
+    transition: all 300ms linear;
+}
+
+.active .arrow {
+    rotate: 360deg;
+    transition: all .3s;
+}
+
+@media (max-width:768px) {
+    .w-lg-100 {
+        width: 100%;
+    }
+
+    .btnnextprev {
+        display: none !important;
+    }
+
+    .fs-88 {
+        font-size: 56px;
+    }
+
+    .fs-80 {
+        font-size: 60px;
+    }
+
+}
+
+@media (max-width:576px) {
+    .fs-36 {
+        font-size: 30px;
+    }
+
+    .fs-24 {
+        font-size: var(--fs-16);
+    }
+}
