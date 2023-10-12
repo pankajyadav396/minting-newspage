@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: var(--ff-modernofbcomp);
-    src: url(../fonts/modernofb-20180515/FB\ Moderno\ Font\ Family/ModernoFBComp-bold);
+    src: url("/assets/fonts/modernofb-20180515/FB\ Moderno\ Font\ Family/ModernoFBComp-Bold");
 }
 
 @font-face {
@@ -50,6 +50,10 @@
     --color-green: #00A106;
     --color-grey: #70675F;
     --color-grey1: #A59A90;
+}
+
+body {
+    overflow-x: hidden !important;
 }
 
 .color-grey {
@@ -284,12 +288,15 @@ ul li:hover {
     width: 40px !important;
     height: 40px !important;
 }
-.z-10{
+
+.z-10 {
     z-index: 10;
 }
-.bg-wheat{
+
+.bg-wheat {
     background-color: wheat;
 }
+
 .pb-500 {
     padding-bottom: 500px !important;
 }
@@ -459,6 +466,7 @@ ul li:hover {
     padding: 12px 24px;
     background: transparent;
 }
+
 .no-100 {
     border: 2px solid var(--color-black);
     padding: 12px 24px;
