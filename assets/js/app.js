@@ -1,16 +1,35 @@
 
+const preloader = document.getElementById("preloader");
+
+setTimeout(() => {
+    preloader.classList.add("d-none")
+    preloader.classList.add("overflow-hidden")
+}, 1000)
+
+let backtotop = document.getElementById('backto-top')
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 700) {
+        backtotop.style.display = "flex"
+    }
+    else {
+        backtotop.style.display = "none"
+    }
+})
+
+
 
 $('.slick').slick({
     dots: false,
     infinite: true,
     speed: 300,
-    autoplay:true,
+    autoplay: false,
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
     prevArrow: '.btn-prev',
     nextArrow: '.btn-next',
-    
+
     responsive: [{
         breakpoint: 1100,
         settings: {
@@ -40,8 +59,6 @@ $('.slick').slick({
     }
     ]
 });
-
-
 
 /*count-down*/
 
@@ -74,4 +91,85 @@ SubBtn.addEventListener("click", function () {
     p.innerHTML = +p.innerHTML - 1;
     SaveBtn.classList.remove("btn-disabled");
 })
-    
+
+$('.slick2').slick({
+    dots: false,
+    infinite: true,
+    speed: 3000,
+    autoplay: true,
+    autoplaySpeed: 0,
+    cssEase: 'Linear',
+    slidesToShow: 8,
+    slidesToScroll: 1,
+
+    responsive: [{
+        breakpoint: 1100,
+        settings: {
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplaySpeed: 0,
+            cssEase: 'Linear',
+            infinite: true,
+            dots: false,
+        }
+    },
+    {
+        breakpoint: 900,
+        settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 0,
+            cssEase: 'Linear',
+            speed: 1000,
+        }
+    },
+    {
+        breakpoint: 650,
+        settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplaySpeed: 0,
+            cssEase: 'Linear',
+        }
+    },
+    {
+        breakpoint: 580,
+        settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplaySpeed: 0,
+            cssEase: 'Linear',
+        }
+    },
+    {
+        breakpoint: 480,
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            autoplaySpeed: 0,
+            cssEase: 'Linear',
+        }
+    }
+    ]
+
+})
+$('.slick3').slick({
+    infinite: true,
+    speed: 300,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    prevArrow: '.1prev-arrow',
+    nextArrow: '.2nxt-arrow',
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+
+            }
+        },
+
+    ]
+});
